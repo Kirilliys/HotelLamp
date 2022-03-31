@@ -1,9 +1,31 @@
+@font-face {
+  font-family: "Montserrat";
+  scr: url("../fonts/Montserrat-Regular.ttf") format "truetype";
+  scr: url("../fonts/Montserrat-Regular.woff") format "woff";
+  scr: url("../fonts/Montserrat-Regular.eot") format "woff";
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf") format "truetype";
+  src: url("../fonts/Montserrat-Bold.woff") format "woff";
+  src: url("../fonts/Montserrat-Bold.eot") format "eot";
+  font-style: normal;
+  font-weight: bold;
+}
 * {
   box-sizing: border-box;
 }
 
 body {
   background-color: #E5E5E5;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  margin: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -344,4 +366,78 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+.header {
+  background-color: #ffffff;
+  padding-top: 26px;
+  padding-bottom: 23px;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 105px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  position: relative;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 20px;
+}
+.nav__link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}
+.nav__item:first-child a {
+  color: rgba(31, 32, 65, 0.75);
+  font-weight: 700;
+}
+.nav__item:not(:last-child) {
+  margin-right: 20px;
+}
+.nav__down::after {
+  content: url("../img/expend.svg");
+  margin-left: 5px;
+}
+.nav__submenu {
+  position: absolute;
+  width: 100%;
+  list-style: none;
+  z-index: 10;
+  padding: 0;
+  transition: 0.5s ease-in-out;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+}
+.nav ul li:hover .nav__submenu {
+  transform: scaleY(1);
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid #BC9CFF;
+  color: #BC9CFF;
+  background-color: inherit;
+  border-radius: 22px;
+  cursor: pointer;
+}
+.button__home {
+  margin-right: 20px;
+}
+.button__reg {
+  color: #ffffff;
+  background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+  border: none;
 }/*# sourceMappingURL=style.css.map */
