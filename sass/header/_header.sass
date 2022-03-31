@@ -22,11 +22,10 @@
   &__link
     text-decoration: none
     color: $dark-50
+  &__boss
+    color: $dark-75
+    font-weight: 700
   &__item
-    &:first-child
-      a
-        color: $dark-75
-        font-weight: 700
     &:not(:last-child)
       margin-right: 20px
   &__down
@@ -47,6 +46,9 @@
     -webkit-transform-origin: 0 0
     -ms-transform-origin: 0 0
     transform-origin: 0 0 //скрываем элементы списка
+    li
+      a
+        border-bottom: 1px solid #8BA4F9
   ul
     li
       &:hover

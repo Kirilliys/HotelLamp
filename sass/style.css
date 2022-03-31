@@ -400,7 +400,7 @@ template {
   text-decoration: none;
   color: rgba(31, 32, 65, 0.5);
 }
-.nav__item:first-child a {
+.nav__boss {
   color: rgba(31, 32, 65, 0.75);
   font-weight: 700;
 }
@@ -420,6 +420,9 @@ template {
   transition: 0.5s ease-in-out;
   transform: scaleY(0);
   transform-origin: 0 0;
+}
+.nav__submenu li a {
+  border-bottom: 1px solid #8BA4F9;
 }
 .nav ul li:hover .nav__submenu {
   transform: scaleY(1);
