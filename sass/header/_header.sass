@@ -6,6 +6,8 @@
     display: flex
     justify-content: space-between
     align-items: center
+  &--user
+    margin-top: 40px
 .logo
   width: 105px
   height: 40px
@@ -22,6 +24,8 @@
   &__link
     text-decoration: none
     color: $dark-50
+    font-size: 14px
+    line-height: 17px
   &__boss
     color: $dark-75
     font-weight: 700
@@ -39,7 +43,7 @@
     list-style: none
     z-index: 10
     padding: 0
-    transition: 0.5s ease-in-out
+    transition: 0.3s ease-in-out
     -webkit-transform: scaleY(0)
     -ms-transform: scaleY(0)
     transform: scaleY(0)
@@ -63,9 +67,18 @@
   background-color: inherit
   border-radius: 22px
   cursor: pointer
+  text-transform: uppercase
   &__home
     margin-right: 20px
   &__reg
     color: $white
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%)
     border: none
+
+.user
+  &__name
+    color: $dark-50
+    font-size: 14px
+    line-height: 17px
+    padding-left: 15px
+    border-left: 1px solid rgba(31, 32, 65, 0.1)

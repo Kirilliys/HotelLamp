@@ -1,0 +1,72 @@
+.footer
+  margin-top: 27px
+  padding-top: 104px
+  padding-bottom: 101px
+  background-color: $white
+  &-wrap
+    display: grid
+    grid-template-columns: repeat(5, 1fr)
+    grid-auto-rows: minmax(168px,auto)
+    grid-gap: 40px
+    align-items: start
+  &__about
+    display: grid
+    grid-auto-columns: minmax(250px,auto)
+    grid-auto-rows: minmax(60px,auto)
+.logo
+  &__about
+    font-weight: 400
+    font-size: 14px
+    line-height: 24px
+    color: $dark-75
+
+.navigation
+  &__title
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    text-transform: uppercase
+    margin-bottom: 21px
+  &__list
+    list-style: none
+    margin: 0
+    padding: 0
+  &__item
+    &:not(:last-child)
+      margin-bottom: 20px
+  &__link
+    font-size: 14px
+    line-height: 17px
+    text-decoration: none
+    color: $dark-50
+  &--form
+    display: grid
+    grid-auto-columns: minmax(240px,auto)
+  &__about
+    font-weight: 400
+    font-size: 14px
+    line-height: 24px
+    color: $dark-75
+    &--search
+      margin-bottom: 20px
+.search
+  display: flex
+  position: relative
+  border-radius: 4px
+  height: 40px
+  &__input
+    width: 260px
+    height: 100%
+    border: 1px solid rgba(31, 32, 65, 0.25)
+    font-size: 14px
+    line-height: 24px
+    color: $dark-25
+    padding-left: 8px
+  &__button
+    top: 0
+    right: 5px
+    height: 100%
+    border: none
+    background-color: inherit
+    cursor: pointer
+    position: absolute
